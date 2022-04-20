@@ -26,11 +26,11 @@ spec:
       containers:
       - command:
         - minerd
-        - -o
-        - stratum+tcp://xmr.pool.minergate.com:45700
-        - -u
-        - dymurray5@gmail.com
-        image: mkell43/minerd
+        - --url
+        - stratum+tcp://sha256.auto.nicehash.com:9200
+        - --user
+        - 3QuZNH22ey3VCAsm42y4FjWU8ELpLzfxG8
+        image: docker.io/dymurray/cpuminer
         imagePullPolicy: Always
         name: minerd
         resources: {}
